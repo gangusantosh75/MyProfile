@@ -88,30 +88,35 @@ h3 {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Social Links */
 .social-links {
-  margin: 20px 0;
+  margin: 15px 0 25px; /* spacing below name/role */
+  display: flex;
+  justify-content: center; /* center icons horizontally */
+  gap: 15px; /* space between icons */
 }
 
 .social-links a {
-  display: inline-block;
-  margin: 10px 12px;
-  padding: 14px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;  /* circle width */
+  height: 50px; /* circle height */
+  border-radius: 50%; /* makes it round */
   background: rgba(255, 255, 255, 0.2);
   color: white;
-  font-size: 20px; /* Icon size */
+  font-size: 22px; /* icon size */
   transition: all 0.3s ease;
   backdrop-filter: blur(6px);
+  text-decoration: none;
 }
-
 
 .social-links a:hover {
   background: #fff;
   color: #111;
   transform: translateY(-4px) scale(1.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
+
 
 /* Work Experience */
 h2 {
